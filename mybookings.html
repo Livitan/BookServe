@@ -1,0 +1,368 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mybookings</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/mybookings.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<span class="glyphicon glyphicon-check">Book&Serve</span>
+					</a>
+				</div>    
+				<ul class="nav navbar-nav navbar-right">
+					<div class="dropdown">
+						<button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Москва <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#">СПБ</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</div>
+					<li><a href="#"><span class="glyphicon glyphicon-bell"></span></a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+
+	<section class="menu">
+		<div class="btn-group btn-group-justified">
+			<div class="btn-group">
+				<button type="button" class="btn btn-default">Мои брони</button>
+			</div>
+			<div class="btn-group">
+				<a href="favourites.html"><button type="button" class="btn btn-default">Избранное</button></a>
+			</div>
+			<div class="btn-group">
+				<button type="button" class="btn btn-default">Календарь</button>
+			</div>
+			<div class="btn-group">
+				<button type="button" class="btn btn-default">Карта</button>
+			</div>
+		</div>
+	</section>
+
+
+	<div class="container-fluid option">
+		<div class="dropdown">
+			<button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				за месяц <span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="#">СПБ</a></li>
+				<li><a href="#">Another action</a></li>
+				<li><a href="#">Something else here</a></li>
+				<li><a href="#">Separated link</a></li>
+			</ul>
+		</div>
+		<div class="dropdown">
+			<button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				по дате <span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="#">СПБ</a></li>
+				<li><a href="#">Another action</a></li>
+				<li><a href="#">Something else here</a></li>
+				<li><a href="#">Separated link</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="container-fluid main">
+		<div class="col-md-2">
+
+			<div class="panel-group" id="role">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#role" href="#relevance">
+								Актуальность
+							</a>
+						</h4>
+					</div>
+					<div id="relevance" class="panel-collapse collapse in">
+						<li class="list-group-item">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> <span>Активные</span>
+								</label>
+							</div></li>
+							<li class="list-group-item">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> <span>Завершенные</span>
+									</label>
+								</div>
+							</li>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel-group" id="cat">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#cat" href="#category">
+									Категория
+								</a>
+							</h4>
+						</div>
+						<div id="category" class="panel-collapse collapse in">
+							<li class="list-group-item">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> <span>Авто</span>
+									</label>
+								</div></li>
+								<li class="list-group-item">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox"> <span>Красота и здоровье</span>
+										</label>
+									</div>
+									<li class="list-group-item">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox"> <span>Образование</span>
+											</label>
+										</div>
+										<li class="list-group-item">
+											<div class="checkbox">
+												<label>
+													<input type="checkbox"> <span>Спорт</span>
+												</label>
+											</div>
+											<li class="list-group-item">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox"> <span>Еда</span>
+													</label>
+												</div>
+												<li class="list-group-item">
+													<div class="checkbox">
+														<label>
+															<input type="checkbox"> <span>Развлечения</span>
+														</label>
+													</div>
+													<li class="list-group-item">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox"> <span>Дом/Офис</span>
+															</label>
+														</div>
+														<li class="list-group-item">
+															<div class="checkbox">
+																<label>
+																	<input type="checkbox"> <span>Животные и растения</span>
+																</label>
+															</div>
+														</li>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel-group" id="ot">
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#ot" href="#other">
+															...
+															</a>
+														</h4>
+													</div>
+													<div id="other" class="panel-collapse collapse">
+														...
+														</div>
+													</div>
+												</div>
+
+												<div class="thumbnail">
+													<div class="caption">
+														<h3>Реклама</h3>	
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quam est, libero accusamus eius magnam accusantium facere recusandae molestias atque exercitationem incidunt, expedita magni possimus odio saepe, error dolorum iure.</p>													
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<section class="col-md-10">
+
+												<div class="agency">
+													<div class="col-md-2">
+														<div class="thumbnail">
+															<img src="img/ava.gif" alt="...">
+														</div>
+													</div>
+													<div class="base">
+														<h1>Парикмахерская</h1>
+														<h3>Златные кудри</h3>
+														<span>Стрижка</span>
+														<span>Укладка</span>
+													</div>
+													<div class="date">
+														<div class="d-item">17 / 30</div>
+														<p>Среда, 21 октября</p>
+													</div>
+													<div class="choice">
+														<button type="button" class="btn btn-success">Изменить</button>
+														<button type="button" class="btn btn-danger">Отменить</button>
+													</div>
+													<div class="foo">
+														<div class="btn-group btn-group-justified" role="group" aria-label="...">
+															<div class="btn-group" role="group">
+																<button type="button" class="btn btn-default">Продолжительность: <span>~2ч</span></button>
+															</div>
+															<div class="btn-group" role="group">
+																<button type="button" class="btn btn-default">Цена: <span>500 руб</span></button>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="agency">
+													<div class="col-md-2">
+														<div class="thumbnail">
+															<img src="img/ava.gif" alt="...">
+														</div>
+													</div>
+													<div class="base">
+														<h1>Автомойка</h1>
+														<h3>Мама мыла</h3>
+														<span>Мойка автомобиля</span>
+														<span>Чистка салона</span>
+													</div>
+													<div class="date">
+														<div class="d-item">17 / 30</div>
+														<p>Среда, 21 октября</p>
+													</div>
+													<div class="choice">
+														<button type="button" class="btn btn-success">Изменить</button>
+														<button type="button" class="btn btn-danger">Отменить</button>
+													</div>
+													<div class="foo">
+														<div class="btn-group btn-group-justified" role="group" aria-label="...">
+															<div class="btn-group" role="group">
+																<button type="button" class="btn btn-default">Продолжительность: <span>~2ч</span></button>
+															</div>
+															<div class="btn-group" role="group">
+																<button type="button" class="btn btn-default">Цена: <span>500 руб</span></button>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="agency">
+													<div class="col-md-2">
+														<div class="thumbnail">
+															<img src="img/ava.gif" alt="...">
+														</div>
+													</div>
+													<div class="base">
+														<h1>Репетитор</h1>
+														<h3>Арсений Умный</h3>
+														<span>Урок физики (1ч)</span>
+													</div>
+													<div class="date">
+														<div class="d-item">17 / 30</div>
+														<p>Среда, 21 октября</p>
+													</div>
+													<div class="choice">
+														<button type="button" class="btn btn-success">Изменить</button>
+														<button type="button" class="btn btn-danger">Отменить</button>
+													</div>
+													<div class="foo">
+														<div class="btn-group btn-group-justified" role="group" aria-label="...">
+															<div class="btn-group" role="group">
+																<button type="button" class="btn btn-default">Продолжительность: <span>~2ч</span></button>
+															</div>
+															<div class="btn-group" role="group">
+																<button type="button" class="btn btn-default">Цена: <span>500 руб</span></button>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="agency">
+													<div class="col-md-2">
+														<div class="thumbnail">
+															<img src="img/ava.gif" alt="...">
+														</div>
+													</div>
+													<div class="base">
+														<h1>Солярий</h1>
+														<h3>Палящий зной</h3>
+														<span>Сеанс закага (30 мин)</span>
+													</div>
+													<div class="date">
+														<div class="d-item">17 / 30</div>
+														<p>Среда, 21 октября</p>
+													</div>
+													<div class="choice">
+														<button type="button" class="btn btn-success">Изменить</button>
+														<button type="button" class="btn btn-danger">Отменить</button>
+													</div>
+													<div class="foo">
+														<div class="btn-group btn-group-justified" role="group" aria-label="...">
+															<div class="btn-group" role="group">
+																<button type="button" class="btn btn-default">Продолжительность: <span>~30 мин</span></button>
+															</div>
+															<div class="btn-group" role="group">
+																<button type="button" class="btn btn-default">Цена: <span>500 руб</span></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+										</div>
+										<div class="footer">								
+											<div class="container">
+												<a class="navbar-brand" href="#">Brand</a>
+												<ul class="nav navbar-nav navbar-left">	
+													<li role="presentation"><a href="#">Home</a></li>
+													<li role="presentation"><a href="#">Profile</a></li>
+													<li role="presentation"><a href="#">Messages</a></li>
+												</ul>
+												<ul class="nav navbar-nav navbar-right">
+													<li role="presentation"><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+													<li role="presentation"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+													<li role="presentation"><a href="#"><i class="fa fa-vk fa-2x"></i></a></li>
+													<li role="presentation"><a href="#"><i class="fa fa-google-plus fa-2x"></i></a></li>
+												</ul>
+											</div>
+										</div>
+
+
+
+										<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+										<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+									</body>
+									</html>
