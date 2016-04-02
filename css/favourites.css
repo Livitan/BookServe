@@ -55,8 +55,13 @@ section .agency {
     position: absolute;
     right: 0;
     top: 0;
-    width: 12%;
-    font-size: 40px; }
+    font-size: 40px;
+    unicode-bidi: bidi-override;
+    direction: rtl; }
+    section .agency .rating > span:hover:before,
+    section .agency .rating > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute; }  
 
 section .base {
   padding: 0 10px; }
