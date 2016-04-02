@@ -1,0 +1,76 @@
+header nav.navbar {
+  margin-bottom: 0;
+  border: none; }
+
+header .glyphicon {
+  font-size: 30px;
+  color: #000; }
+
+header .glyphicon-user {
+  font-size: 45px; }
+
+header .glyphicon-bell {
+  padding-top: 8px; }
+
+header nav div.dropdown {
+  margin-top: 28px;
+  float: left; }
+
+.option {
+  padding: 10px; }
+  .option div.dropdown {
+    float: right;
+    padding-right: 10px; }
+    .option div.dropdown .dropdown-toggle {
+      padding: 0 15px; }
+
+.main .panel {
+  border: none; }
+
+.main .panel-heading {
+  background-color: #337ab7;
+  color: #fff;
+  text-align: center;
+  padding: 15px; }
+
+.main .list-group-item .checkbox {
+  margin: 0; }
+  .main .list-group-item .checkbox input {
+    height: 18px;
+    width: 18px;
+    margin-top: 2px; }
+  .main .list-group-item .checkbox span {
+    padding-left: 30px; }
+
+section .agency {
+  position: relative;
+  min-height: 200px;
+  margin-bottom: 10px;
+  border: 1px solid #333333; }
+  section .agency .row {
+    padding: 10px; }
+  section .agency .thumbnail {
+    width: 90%; }
+  section .agency .rating {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 12%;
+    font-size: 40px; }
+
+section .base {
+  padding: 0 10px; }
+  section .base h1 {
+    margin-top: 0; }
+  section .base h3 {
+    color: #5B9AC8; }
+
+.footer {
+  border-top: 1px solid black;
+  padding: 15px 0 10px 0; }
+  .footer .navbar-brand {
+    color: #333333; }
+  .footer .navbar-left li a {
+    color: #5B9AC8; }
+  .footer .navbar-right i {
+    color: #333333; }
