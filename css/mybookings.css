@@ -16,6 +16,10 @@ header nav div.dropdown {
   margin-top: 28px;
   float: left; }
 
+header nav .open .dropdown-menu i{
+  margin-right: 20px;
+  width: 14px; } 
+
 .option {
   padding: 10px; }
   .option div.dropdown {
@@ -27,6 +31,12 @@ header nav div.dropdown {
 .main .panel {
   border: none; }
 
+.main > .col-md-2 {
+  padding: 0;}
+
+.main > .col-md-10 {
+  padding: 0 0 0 20px;}    
+
 .main .panel-heading {
   background-color: #337ab7;
   color: #fff;
@@ -35,12 +45,6 @@ header nav div.dropdown {
 
 .main .list-group-item .checkbox {
   margin: 0; }
-  .main .list-group-item .checkbox input {
-    height: 18px;
-    width: 18px;
-    margin-top: 2px; }
-  .main .list-group-item .checkbox span {
-    padding-left: 30px; }
 
 section .agency {
   position: relative;
@@ -55,10 +59,11 @@ section .agency {
     position: absolute;
     right: 0;
     top: 0;
-    border: 1px solid #333333;
     background-color: gray;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
     color: #fff;
-    width: 12%;
+    width: 15%;
     font-size: 24px; }
     section .agency .date .d-item {
       margin: 0 5%;
@@ -66,24 +71,23 @@ section .agency {
       border-bottom: 1px solid #fff; }
     section .agency .date p {
       font-size: 13px;
-      margin: 5px 15px 2px 15px; }
+      margin: 5px 0; }
 
 section .choice {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 12%; }
+  width: 15%; }
   section .choice .btn {
     -webkit-border-radius: 0;
             border-radius: 0;
     display: block;
     width: 100%;
-    border: 1px solid #333333;
     border-bottom: none;
     padding: 10px; }
 
 section .foo {
-  width: 88%;
+  width: 85%;
   position: absolute;
   bottom: 0;
   left: 0; }
