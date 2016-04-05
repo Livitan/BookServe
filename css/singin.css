@@ -33,19 +33,16 @@ header .navbar-right .tbadge {
     padding: 5px;
     font-size: 10px; }
 
-.basiс-info h4 {
-  border-bottom: 1px solid #ddd;
-  margin: 20px auto;
-  padding-bottom: 5px;
-  width: 70%; }
-
-.basiс-info .rel {
-  position: relative; }
-  .basiс-info .rel .two {
-    position: absolute;
-    width: 100%;
-    left: 44%;
-    top: 49px; }
+.basiс-info {
+  padding-bottom: 20px; }
+  .basiс-info h4 {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 5px; }
+    .basiс-info h4 .glyphicon {
+      margin-left: 70%; }
+  .basiс-info .clarify {
+    padding-top: 10px; }
 
 .footer {
   border-top: 1px solid #ddd;
