@@ -16,16 +16,30 @@ header nav div.dropdown {
   margin-top: 28px;
   float: left; }
 
+header nav .open .dropdown-menu i{
+  margin-right: 20px;
+  text-align: center;
+  width: 14px; }  
+
 .option {
   padding: 10px; }
   .option div.dropdown {
     float: right;
     padding-right: 10px; }
-    .option div.dropdown .dropdown-toggle {
+    .option .open .dropdown-toggle {
       padding: 0 15px; }
 
 .main .panel {
   border: none; }
+
+.main .panel .list-group-item {
+  border-radius: 0; }
+
+.main > .col-md-2 {
+  padding: 0; }
+
+.main > .col-md-10 {
+  padding: 0 0 0 20px; }    
 
 .main .panel-heading {
   background-color: #337ab7;
@@ -35,18 +49,12 @@ header nav div.dropdown {
 
 .main .list-group-item .checkbox {
   margin: 0; }
-  .main .list-group-item .checkbox input {
-    height: 18px;
-    width: 18px;
-    margin-top: 2px; }
-  .main .list-group-item .checkbox span {
-    padding-left: 30px; }
 
 section .agency {
   position: relative;
   min-height: 200px;
   margin-bottom: 10px;
-  border: 1px solid #333333; }
+  border: 1px solid #ddd; }
   section .agency .row {
     padding: 10px; }
   section .agency .thumbnail {
@@ -71,7 +79,7 @@ section .base {
     color: #5B9AC8; }
 
 .footer {
-  border-top: 1px solid black;
+  border-top: 1px solid #ddd;
   padding: 15px 0 10px 0; }
   .footer .navbar-brand {
     color: #333333; }

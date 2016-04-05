@@ -1,0 +1,58 @@
+@charset "UTF-8";
+header nav.navbar {
+  margin-bottom: 0;
+  border: none; }
+
+header .glyphicon {
+  font-size: 30px;
+  color: #000; }
+
+header .glyphicon-user {
+  font-size: 45px; }
+
+header .glyphicon-bell {
+  padding-top: 8px; }
+
+header nav div.dropdown {
+  margin-top: 28px;
+  float: left; }
+
+header nav .open .dropdown-menu i {
+  margin-right: 20px;
+  width: 14px;
+  text-align: center; }
+
+header .navbar-right .tbadge {
+  position: relative; }
+  header .navbar-right .tbadge .badge {
+    position: absolute;
+    right: 5px;
+    top: 22px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    padding: 5px;
+    font-size: 10px; }
+
+.basiс-info h4 {
+  border-bottom: 1px solid #ddd;
+  margin: 20px auto;
+  padding-bottom: 5px;
+  width: 70%; }
+
+.basiс-info .rel {
+  position: relative; }
+  .basiс-info .rel .two {
+    position: absolute;
+    width: 100%;
+    left: 44%;
+    top: 49px; }
+
+.footer {
+  border-top: 1px solid #ddd;
+  padding: 15px 0 10px 0; }
+  .footer .navbar-brand {
+    color: #333333; }
+  .footer .navbar-left li a {
+    color: #5B9AC8; }
+  .footer .navbar-right i {
+    color: #333333; }

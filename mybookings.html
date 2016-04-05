@@ -10,45 +10,43 @@
 	<link rel="stylesheet" href="css/mybookings.css">
 </head>
 <body>
-	<header>
+	<header class="container">
 		<nav class="navbar navbar-default">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<span class="glyphicon glyphicon-check">Book&Serve</span>
+				</a>
+			</div>    
+			<ul class="nav navbar-nav navbar-right">
+				<div class="dropdown">
+					<button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Москва <span class="caret"></span>
 					</button>
-					<a class="navbar-brand" href="#">
-						<span class="glyphicon glyphicon-check">Book&Serve</span>
-					</a>
-				</div>    
-				<ul class="nav navbar-nav navbar-right">
-					<div class="dropdown">
-						<button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Москва <span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu">
-							<li><a href="#">СПБ</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-					</div>
-					<li><a href="#"><span class="glyphicon glyphicon-bell"></span></a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="home.html"><i class="fa fa-user"></i>Моя страница</a></li>
-							<li><a href="#"><i class="fa fa-briefcase"></i>Мои предприятия</a></li>
-							<li><a href="#"><i class="fa fa-cog"></i>Настройки</a></li>
-							<li><a href="#"><i class="fa fa-question-circle"></i>Помощь</a></li>
-							<li><a href="#"><i class="fa fa-sign-out"></i>Выйти</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
+					<ul class="dropdown-menu">
+						<li><a href="#">Царицыно</a></li>
+						<li><a href="#">Химки</a></li>
+						<li><a href="#">Арбат</a></li>
+						<li><a href="#">Перово</a></li>
+					</ul>
+				</div>
+				<li><a href="#"><span class="glyphicon glyphicon-bell"></span></a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="home.html"><i class="fa fa-user"></i>Моя страница</a></li>
+						<li><a href="#"><i class="fa fa-briefcase"></i>Мои предприятия</a></li>
+						<li><a href="#"><i class="fa fa-cog"></i>Настройки</a></li>
+						<li><a href="#"><i class="fa fa-question-circle"></i>Помощь</a></li>
+						<li><a href="#"><i class="fa fa-sign-out"></i>Выйти</a></li>
+					</ul>
+				</li>
+			</ul>
 		</nav>
 	</header>
 
@@ -56,31 +54,29 @@
 	<section class="container menu">
 		<div class="btn-group btn-group-justified">
 			<div class="btn-group">
-				<button type="button" class="btn btn-default">Мои брони</button>
+				<a class="btn btn-default" href="mybookings.html">Мои брони</a>
 			</div>
 			<div class="btn-group">
-				<a href="favourites.html"><button type="button" class="btn btn-default">Избранное</button></a>
+				<a class="btn btn-default" href="favourites.html">Избранное</a>
 			</div>
 			<div class="btn-group">
-				<button type="button" class="btn btn-default">Календарь</button>
+				<a class="btn btn-default" href="#">Календарь</a>
 			</div>
 			<div class="btn-group">
-				<button type="button" class="btn btn-default">Карта</button>
+				<a class="btn btn-default" href="#">Карта</a>
 			</div>
 		</div>
 	</section>
-
-
 	<div class="container option">
 		<div class="dropdown">
 			<button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				за месяц <span class="caret"></span>
 			</button>
 			<ul class="dropdown-menu">
-				<li><a href="#">СПБ</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li><a href="#">Separated link</a></li>
+ 				<li><a href="#">за год</a></li>
+ 				<li><a href="#">за квартал</a></li>
+				<li><a href="#">за неделю</a></li>
+				<li><a href="#">за день</a></li>
 			</ul>
 		</div>
 		<div class="dropdown">
@@ -88,15 +84,13 @@
 				по дате <span class="caret"></span>
 			</button>
 			<ul class="dropdown-menu">
-				<li><a href="#">СПБ</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li><a href="#">Separated link</a></li>
+				<li><a href="#">по поулярности</a></li>
+				<li><a href="#">по рейтингу</a></li>
+				<li><a href="#">по отзывам</a></li>
+				<li><a href="#">по цене</a></li>
 			</ul>
 		</div>
 	</div>
-
-
 	<div class="container main">
 		<div class="col-md-2">
 
@@ -126,7 +120,6 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="panel-group" id="cat">
 					<div class="panel panel-default">
 						<div class="panel-heading">
@@ -189,7 +182,6 @@
 													</div>
 												</div>
 											</div>
-
 											<div class="panel-group" id="ot">
 												<div class="panel panel-default">
 													<div class="panel-heading">
@@ -212,12 +204,7 @@
 													</div>
 												</div>
 											</div>
-
-
-
-
 											<section class="col-md-10">
-
 												<div class="agency">
 													<div class="col-md-2">
 														<div class="thumbnail">
@@ -343,8 +330,7 @@
 												</div>
 											</section>
 										</div>
-										<div class="footer">								
-											<div class="container">
+										<div class="container footer">								
 												<a class="navbar-brand" href="#">Brand</a>
 												<ul class="nav navbar-nav navbar-left">	
 													<li role="presentation"><a href="#">Home</a></li>
@@ -357,11 +343,7 @@
 													<li role="presentation"><a href="#"><i class="fa fa-vk fa-2x"></i></a></li>
 													<li role="presentation"><a href="#"><i class="fa fa-google-plus fa-2x"></i></a></li>
 												</ul>
-											</div>
 										</div>
-
-
-
 										<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 										<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 									</body>
