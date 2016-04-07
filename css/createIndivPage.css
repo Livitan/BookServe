@@ -73,9 +73,8 @@ header .navbar-right .tbadge {
     margin-bottom: 12px; }
   .create-page .mode .time-work p {
     margin-bottom: 18px; }
-  .create-page .second,
-  .create-page button {
-    margin-top: 50px; }
+  .create-page .second {
+    margin: 50px 0; }
 
 .footer {
   border-top: 1px solid #ddd;

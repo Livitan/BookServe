@@ -35,17 +35,81 @@ header .navbar-right .tbadge {
 .main .search {
   margin: 15px 0; }
 
-.main .panel-body {
+.main .row .ava {
+  margin-bottom: 0; }
+  .main .row .ava img {
+    height: 230px; }
+
+.main .row .media {
+  margin: 10px 0 15px 15px; }
+
+.main .row .schedule .table {
+  text-align: center; }
+  .main .row .schedule .table td {
+    border-top: none; }
+
+.main .promo {
   position: relative; }
-  .main .panel-body .base .role {
+  .main .promo .btn-down {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    -webkit-transform: translate(-50%, 50%);
+        -ms-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+
+.main .set .tab-content td {
+  border-top: none; }
+
+.main .set #service h4 {
+  border-bottom: 1px solid #ddd; }
+
+.main .set #service input[type="search"] {
+  margin: 20px 0; }
+
+.main .set #service .row td {
+  vertical-align: middle; }
+
+.main .base {
+  position: relative;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  padding: 0 15px;
+  min-height: 302px; }
+  .main .base .btn-down {
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    -webkit-transform: translate(-50%, 50%);
+        -ms-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+  .main .base .container .order {
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+    margin-bottom: 10px; }
+  .main .base .role {
     color: #337ab7; }
-  .main .panel-body .rating {
-    right: 5px;
-    top: 20px;
-    font-size: 40px;
-    unicode-bidi: bidi-override;
-    direction: rtl;
-    position: absolute; }
+  .main .base .rating {
+    top: 7px;
+    position: absolute;
+    right: 5px; }
+    .main .base .rating .likes {
+      font-size: 25px;
+      margin-left: 5px; }
+      .main .base .rating .likes span:not(:first-child) {
+        margin-left: 12px; }
+      .main .base .rating .likes span:hover {
+        color: #337ab7; }
+    .main .base .rating .stars {
+      font-size: 40px;
+      unicode-bidi: bidi-override;
+      direction: rtl; }
 
 .footer {
   border-top: 1px solid #ddd;
