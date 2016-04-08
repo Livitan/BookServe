@@ -1,0 +1,167 @@
+header nav.navbar {
+  margin-bottom: 0;
+  border: none; }
+
+header .glyphicon {
+  font-size: 30px;
+  color: #000; }
+
+header .glyphicon-user {
+  font-size: 45px; }
+
+header .glyphicon-bell {
+  padding-top: 8px; }
+
+header nav div.dropdown {
+  margin-top: 28px;
+  float: left; }
+
+header nav .open .dropdown-menu i {
+  margin-right: 20px;
+  width: 14px;
+  text-align: center; }
+
+header .navbar-right .tbadge {
+  position: relative; }
+  header .navbar-right .tbadge .badge {
+    position: absolute;
+    right: 5px;
+    top: 22px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    padding: 5px;
+    font-size: 10px; }
+
+.main .search {
+  margin: 15px 0; }
+
+.main .row .ava {
+  margin-bottom: 0; }
+  .main .row .ava img {
+    height: 230px; }
+
+.main .row .media {
+  margin: 10px 0 15px 15px; }
+
+.main .row .schedule .table {
+  text-align: center; }
+  .main .row .schedule .table td {
+    border-top: none; }
+
+.main .promo {
+  position: relative; }
+  .main .promo .btn-down {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    -webkit-transform: translate(-50%, 50%);
+        -ms-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+
+.main .set .tab-content td {
+  border-top: none; }
+
+.main .set #service h4 {
+  border-bottom: 1px solid #ddd; }
+
+.main .set #service input[type="search"] {
+  margin: 20px 0; }
+
+.main .set #service .row td {
+  vertical-align: middle; }
+
+.main .base {
+  position: relative;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  padding: 0 15px;
+  min-height: 302px; }
+  .main .base .btn-down {
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    -webkit-transform: translate(-50%, 50%);
+        -ms-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+  .main .base .container .order {
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+    margin-bottom: 10px; }
+  .main .base .role {
+    color: #337ab7; }
+  .main .base .rating {
+    top: 7px;
+    position: absolute;
+    right: 5px; }
+    .main .base .rating .likes {
+      font-size: 25px;
+      margin-left: 5px; }
+      .main .base .rating .likes span:not(:first-child) {
+        margin-left: 12px; }
+      .main .base .rating .likes span:hover {
+        color: #337ab7; }
+    .main .base .rating .stars {
+      font-size: 40px;
+      unicode-bidi: bidi-override;
+      direction: rtl; }
+    .main .base .rating .stars > span:hover:before,
+    .main .base .rating .stars > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute; }
+
+.main .similar > h4 {
+  border-bottom: 1px solid #ddd; }
+
+.main .similar .carousel {
+  position: relative;
+  padding: 10px 20px; }
+  .main .similar .carousel .prev {
+    left: -30px; }
+  .main .similar .carousel .next {
+    right: 2px; }
+  .main .similar .carousel .arrow {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: 110px; }
+  .main .similar .carousel img {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd; }
+  .main .similar .carousel a {
+    color: #000;
+    text-align: left; }
+    .main .similar .carousel a .price {
+      text-align: right; }
+  .main .similar .carousel .c-name {
+    font-size: 18px; }
+  .main .similar .carousel .wrapper {
+    overflow: hidden;
+    width: 1068px; }
+    .main .similar .carousel .wrapper ul {
+      width: 9999px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      -webkit-transition: margin-left 250ms;
+      transition: margin-left 250ms; }
+    .main .similar .carousel .wrapper li {
+      display: inline-block;
+      max-width: 200px;
+      border: 1px solid #ddd;
+      margin: 0 5px; }
+
+.footer {
+  border-top: 1px solid #ddd;
+  padding: 15px 0 10px 0; }
+  .footer .navbar-brand {
+    color: #333333; }
+  .footer .navbar-left li a {
+    color: #5B9AC8; }
+  .footer .navbar-right i {
+    color: #333333; }
