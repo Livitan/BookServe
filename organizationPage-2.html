@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>OrganizationPage</title>
@@ -9,6 +10,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/organizationPage-2.css">
 </head>
+
 <body>
 	<header class="container">
 		<nav class="navbar navbar-default">
@@ -176,16 +178,113 @@
 		<div class="row set">
 			<div class="col-md-12">
 				<ul class="nav nav-tabs nav-justified">
-					<li><a data-toggle="tab" href="#home">Специалист</a></li>
-					<li class="active"><a data-toggle="tab" href="#service">Услуга</a></li>
-					<li><a data-toggle="tab" href="#menu2">Дата/Время</a></li>
+					<li><a data-toggle="tab" href="#spec">Специалист</a></li>
+					<li><a data-toggle="tab" href="#service">Услуга</a></li>
+					<li class="active"><a data-toggle="tab" href="#date-time">Дата/Время</a></li>
 				</ul>
 				<div class="tab-content">
-					<div id="home" class="tab-pane fade">
-						<h3>HOME</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<div id="spec" class="spec tab-pane fade">
+
+
+						<div class="container">
+							<div class="col-md-2">
+								<a href="">
+									<div class="thumbnail other">
+										<img src="img/ava4.png" alt="..." class="img-responsive img-circle">
+										<h4>Любой</h4>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-2">
+								<a href="">
+									<div class="thumbnail">
+										<img src="img/ava2.png" alt="..." class="img-responsive img-circle">
+										<h5>Марина Иванова</h5>
+										<p>Молодец</p>
+										<div class="popularity">
+											<span class="glyphicon glyphicon-star"></span> 4.9
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-2">
+								<a href="">
+									<div class="thumbnail">
+										<img src="img/ava2.png" alt="..." class="img-responsive img-circle">
+										<h5>Марина Иванова</h5>
+										<p>Молодец</p>
+										<div class="popularity">
+											<span class="glyphicon glyphicon-star"></span> 4.9
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-2">
+								<a href="">
+									<div class="thumbnail">
+										<img src="img/ava2.png" alt="..." class="img-responsive img-circle">
+										<h5>Марина Иванова</h5>
+										<p>Молодец</p>
+										<div class="popularity">
+											<span class="glyphicon glyphicon-star"></span> 4.9
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-2">
+								<a href="">
+									<div class="thumbnail">
+										<img src="img/ava2.png" alt="..." class="img-responsive img-circle">
+										<h5>Марина Иванова</h5>
+										<p>Молодец</p>
+										<div class="popularity">
+											<span class="glyphicon glyphicon-star"></span> 4.9
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-2">
+								<a href="">
+									<div class="thumbnail">
+										<img src="img/ava2.png" alt="..." class="img-responsive img-circle">
+										<h5>Марина Иванова</h5>
+										<p>Молодец</p>
+										<div class="popularity">
+											<span class="glyphicon glyphicon-star"></span> 4.9
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-2">
+								<a href="">
+									<div class="thumbnail">
+										<img src="img/ava2.png" alt="..." class="img-responsive img-circle">
+										<h5>Марина Иванова</h5>
+										<p>Молодец</p>
+										<div class="popularity">
+											<span class="glyphicon glyphicon-star"></span> 4.9
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="row">
+							<table class="table table-bordered">
+								<tr>
+									<td>Продолжительность: ~ 1ч</td>
+									<td>К оплате: 200руб</td>
+									<td>
+										<a class="btn btn-default btn-block">Далее<span class="glyphicon glyphicon-chevron-right"></span>
+										</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+
+
+
 					</div>
-					<div id="service" class="tab-pane fade in active">
+					<div id="service" class="service tab-pane fade">
 						<div class="container">
 							<div class="row">
 								<div class="col-md-5">
@@ -442,9 +541,107 @@
 							</table>
 						</div>
 					</div>
-					<div id="menu2" class="tab-pane fade">
-						<h3>Menu 2</h3>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					<div id="date-time" class="date-time tab-pane fade in active">
+						<div class="container">
+							<div class="col-md-5">
+								<div class="sel-month col-md-9">
+									<select class="form-control">
+										<option>Ноябрь</option>
+										<option>Декабрь</option>
+										<option>Январь</option>
+										<option>Февраль</option>
+										<option>Март</option>
+									</select>
+								</div>
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th>S</th>
+											<th>M</th>
+											<th>T</th>
+											<th>W</th>
+											<th>T</th>
+											<th>F</th>
+											<th>S</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>5</td>
+											<td>6</td>
+											<td>7</td>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td>9</td>
+											<td>10</td>
+											<td>11</td>
+											<td>12</td>
+											<td>13</td>
+											<td>14</td>
+										</tr>
+										<tr>
+											<td>15</td>
+											<td>16</td>
+											<td>17</td>
+											<td class="opted">18</td>
+											<td>19</td>
+											<td>20</td>
+											<td>21</td>
+										</tr>
+										<tr>
+											<td>22</td>
+											<td>23</td>
+											<td>24</td>
+											<td>25</td>
+											<td>26</td>
+											<td>27</td>
+											<td>28</td>
+										</tr>
+										<tr>
+											<td>29</td>
+											<td>30</td>
+											<td>31</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="sel-time col-md-offset-1 col-md-4">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+								<input type="time" value="12:30" name="" id="">
+
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

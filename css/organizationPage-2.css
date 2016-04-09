@@ -60,18 +60,6 @@ header .navbar-right .tbadge {
     -webkit-border-radius: 50%;
             border-radius: 50%; }
 
-.main .set .tab-content td {
-  border-top: none; }
-
-.main .set #service h4 {
-  border-bottom: 1px solid #ddd; }
-
-.main .set #service input[type="search"] {
-  margin: 20px 0; }
-
-.main .set #service .row td {
-  vertical-align: middle; }
-
 .main .base {
   position: relative;
   border: 1px solid #ddd;
@@ -110,10 +98,6 @@ header .navbar-right .tbadge {
       font-size: 40px;
       unicode-bidi: bidi-override;
       direction: rtl; }
-    .main .base .rating .stars > span:hover:before,
-    .main .base .rating .stars > span:hover ~ span:before {
-     content: "\2605";
-     position: absolute; }
 
 .main .similar > h4 {
   border-bottom: 1px solid #ddd; }
@@ -127,7 +111,8 @@ header .navbar-right .tbadge {
     right: 2px; }
   .main .similar .carousel .arrow {
     position: absolute;
-    display: block;
+      position-top: 6px;
+      position-display: block;
     cursor: pointer;
     top: 110px; }
   .main .similar .carousel img {
@@ -155,6 +140,60 @@ header .navbar-right .tbadge {
       max-width: 200px;
       border: 1px solid #ddd;
       margin: 0 5px; }
+
+.set .spec {
+  margin-top: 20px; }
+  .set .spec a:hover {
+    text-decoration: none; }
+  .set .spec .thumbnail {
+    min-height: 235px;
+    padding: 5px 15px;
+    color: #000; }
+  .set .spec p {
+    color: #337ab7; }
+  .set .spec .popularity {
+    margin-bottom: -10px;
+    text-align: right;
+    font-size: 18px;
+    vertical-align: middled; }
+    .set .spec .popularity span {
+      vertical-align: text-top; }
+
+.set .other h4 {
+  text-align: center;
+  margin-top: 40px; }
+
+.set .service h4 {
+  border-bottom: 1px solid #ddd; }
+
+.set .service input[type="search"] {
+  margin: 20px 0; }
+
+.set .service .row td {
+  vertical-align: middle;
+  border-top: none; }
+
+.date-time .sel-month {
+  padding-left: 0;
+  margin: 20px auto; }
+
+.date-time .sel-time {
+  margin-top: 75px; }
+
+.date-time thead {
+  background-color: #337ab7;
+  color: #fff; }
+
+.date-time tbody {
+  background-color: #e7e6e7; }
+  .date-time tbody tr {
+    border-bottom: 2px solid #fff; }
+    .date-time tbody tr .opted {
+      border-bottom: 2px solid #337ab7;
+      -webkit-border-bottom-left-radius: 25px;
+              border-bottom-left-radius: 25px; }
+  .date-time tbody td:hover {
+    background-color: #fff; }
 
 .footer {
   border-top: 1px solid #ddd;
