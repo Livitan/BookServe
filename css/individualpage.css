@@ -242,38 +242,32 @@ header .navbar-right .tbadge {
   left: 100%;
   z-index: 30;
 }
-/** The Spacing **/
+
 .btn-breadcrumb .btn {
-  padding:13px 13.5% 13px 13.5%;
+  padding:13px 21% 13px 21%;
+  font-size: 18px
 }
 .btn-breadcrumb .btn:hover {
   z-index: auto;
 }
 .btn-breadcrumb {
-  width: 99% !important;
+  width: 99%;
 }
-/*.btn-breadcrumb .btn:first-child {
-  padding:6px 6px 6px 10px;
-}
-.btn-breadcrumb .btn:last-child {
-  padding:6px 18px 6px 24px;
-}*/
-/** Default button **/
-.btn-breadcrumb .btn.btn-default:not(:last-child):after {
+.btn-breadcrumb .btn:not(:last-child):after {
   border-left: 10px solid #fff;
 }
-.btn-breadcrumb .btn.btn-default:not(:last-child):before {
+.btn-breadcrumb .btn:not(:last-child):before {
   border-left: 10px solid #ccc;
 }
-.btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {
+.btn-breadcrumb .btn:hover:not(:last-child):after {
   border-left: 10px solid #e4e2e2;
 }
-.btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {
+.btn-breadcrumb .btn:hover:not(:last-child):before {
   border-left: 10px solid #adadad;
 }
-.btn-breadcrumb .btn.btn-default:focus:not(:last-child):after {
+.btn-breadcrumb .btn:focus:not(:last-child):after {
   border-left: 10px solid #e4e2e2;
 }
-.btn-breadcrumb .btn.btn-default:focus:not(:last-child):before {
+.btn-breadcrumb .btn:focus:not(:last-child):before {
   border-left: 10px solid #adadad;
 }

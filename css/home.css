@@ -37,7 +37,8 @@ header .navbar-right .tbadge {
 
 .main-menu .btn-group:not(:last-child) a {
   border-right: 0; }
-
+.main-menu .btn-group .btn {
+  padding: 6px;}
 .main .col-md-7 {
   padding-left: 0; }
 

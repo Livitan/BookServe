@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>creare individual page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/createOrgPage.css">
+
+</head>
+
+<body>
+	<header class="container">
+		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<span class="glyphicon glyphicon-check">Book&Serve</span>
+				</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<div class="dropdown">
+					<button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Москва <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="#">Царицыно</a></li>
+						<li><a href="#">Химки</a></li>
+						<li><a href="#">Арбат</a></li>
+						<li><a href="#">Перово</a></li>
+					</ul>
+				</div>
+				<li><a class="tbadge" href="#"><span class="glyphicon glyphicon-bell"></span><span class="badge">42</span></a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="home.html"><i class="fa fa-user"></i>Моя страница</a></li>
+						<li><a href="#"><i class="fa fa-briefcase"></i>Мои предприятия</a></li>
+						<li><a href="#"><i class="fa fa-cog"></i>Настройки</a></li>
+						<li><a href="#"><i class="fa fa-question-circle"></i>Помощь</a></li>
+						<li><a href="#"><i class="fa fa-sign-out"></i>Выйти</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+
+	<section class="container menu">
+		<div class="btn-group btn-group-justified">
+			<div class="btn-group">
+				<a class="btn btn-default" href="mybookings.html">Мои брони</a>
+			</div>
+			<div class="btn-group">
+				<a class="btn btn-default" href="favourites.html">Избранное</a>
+			</div>
+			<div class="btn-group">
+				<a class="btn btn-default" href="#">Календарь</a>
+			</div>
+			<div class="btn-group">
+				<a class="btn btn-default" href="#">Карта</a>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="container create-page">
+		<h3>Создать страницу организации</h3>
+		<div class="panel panel-default">
+
+			<div class="panel-body">
+				<h4 class="title-name">Общая информация</h4>
+				<form class="form-horizontal" role="form">
+					<div class="form-group">
+						<label class="control-label col-md-2" for="name">Имя:</label>
+						<div class="col-md-8">
+							<input type="text" class="form-control" id="name" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for="Surname">Фамилия:</label>
+						<div class="col-md-8">
+							<input type="text" class="form-control" id="Surname" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for="patronymic">Отчество:</label>
+						<div class="col-md-8">
+							<input type="text" class="form-control" id="patronymic">
+						</div>
+					</div>
+					<div class="container">
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<h4 class="panel-title col-md-offset-1 col-md-9">
+								<a class="col-md-5" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Указать имя на английском
+
+								</a>
+								<a class="col-md-offset-6 glyphicon glyphicon-plus" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></a>
+							</h4>
+							<div id="collapseOne" class="panel-collapse collapse col-md-10" role="tabpanel" aria-labelledby="headingOne">
+								<div class="form-group">
+									<label class="control-label col-md-2" for="first-name">First name:</label>
+									<div class="col-md-8">
+										<input type="text" class="form-control" id="first-name" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="control-label col-md-2" for="last-name">Last name:</label>
+									<div class="col-md-8">
+										<input type="text" class="form-control" id="last-name" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="control-label col-md-2" for="middle-name">Middle name:</label>
+									<div class="col-md-8">
+										<input type="text" class="form-control" id="middle-name">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for="country">Страна:</label>
+						<div class="col-md-3">
+							<select class="form-control" id="country">
+								<option>Россия</option>
+								<option>Белорусь</option>
+								<option>Казаxcтан</option>
+								<option>Украина</option>
+								<option>Китай</option>
+							</select>
+						</div>
+						<label class="control-label col-md-2" for="City">Город:</label>
+						<div class="col-md-3">
+							<select class="form-control" id="City">
+								<option>Московская область</option>
+								<option>Смоленская область</option>
+								<option>Ростовская область</option>
+								<option>Белгородская область</option>
+								<option>Мурманская область</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for="address">Адрес:</label>
+						<div class="col-md-8">
+							<input type="text" class="form-control" id="address" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for=""></label>
+						<div class="col-md-8">
+							<input type="text" class="form-control" id="">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for="area"></label>
+						<div class="col-md-3">
+							<select class="form-control" id="area">
+								<option>Хамовники</option>
+								<option>Строгино</option>
+								<option>Северное Бутово</option>
+								<option>Щукино</option>
+								<option>Южное Бутово</option>
+							</select>
+						</div>
+						<label class="control-label col-md-2" for="metro">Метро:</label>
+						<div class="col-md-3">
+							<select class="form-control" id="metro">
+								<option>Спортивная</option>
+								<option>Калужская</option>
+								<option>Ленинский проспект</option>
+								<option>Студенческая</option>
+								<option>Римская</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="container-fluid">
+						<div class="panel panel-default col-md-8 col-md-offset-2">
+							<div class="panel-body">
+								<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=m6gLBPer-AOOlhV781zC7j6wwMwRqr7s&width=auto&height=293&lang=ru_UA&sourceType=constructor"></script>
+								<div class="row clarify">
+									<p class="col-md-5">Правильно ли указанно место?</p>
+									<div class="col-md-offset-3">
+										<button class="btn btn-primary col-md-offset-6" type="submit">
+											<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+										</button>
+										<button class="btn btn-primary" type="submit">
+											<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for="email">Email:</label>
+						<div class="col-md-8">
+							<input type="email" class="form-control" id="email" required>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Не отображать на странице
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for="phone">Телефон:</label>
+						<div class="col-md-8">
+							<input type="tel" class="form-control" id="phone" required>
+						</div>
+					</div>
+					<div class="container">
+						<div class="panel-group" id="accordion-1" role="tablist" aria-multiselectable="true">
+							<h4 class="panel-title col-md-offset-1 col-md-9">
+								<a class="col-md-5" role="button" data-toggle="collapse" data-parent="#accordion-1" href="#collapsePhone" aria-expanded="true" aria-controls="collapsePhone">
+									Добавить еще телефон
+
+								</a>
+								<a class="col-md-offset-6 glyphicon glyphicon-plus" role="button" data-toggle="collapse" data-parent="#accordion-1" href="#collapsePhone" aria-expanded="true" aria-controls="collapsePhone"></a>
+							</h4>
+							<div id="collapsePhone" class="panel-collapse collapse col-md-10" role="tabpanel" aria-labelledby="headingOne">
+								<div class="form-group">
+									<label class="control-label col-md-2" for="phone-two">Доп. телефон:</label>
+									<div class="col-md-8">
+										<input type="tel" class="form-control" id="phone-two" required>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for="category">Категория:</label>
+						<div class="col-md-4">
+							<select class="form-control" id="category">
+								<option>Не выбрано</option>
+								<option>Здоровье</option>
+								<option>Образование</option>
+								<option>Ветеринария</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for="activity">Вид деятельности:</label>
+						<div class="col-md-4">
+							<select class="form-control" id="activity">
+								<option>Парикмахер</option>
+								<option>Терапевт</option>
+								<option>Учитель</option>
+								<option>Слесарь</option>
+							</select>
+						</div>
+
+
+
+						<span data-toggle="tooltip" data-placement="auto right" title="(?) Вы можете указать больше видов деятельности с премиум-аккаунтом">
+							<button type="button" class="btn btn-xs" data-toggle="collapse" data-target="#activity-collapse" >Предложить свой вариант</button>
+						</span>
+						<script>
+							// script for use tooltip
+							$(document).ready(function() {
+								$('[data-toggle="tooltip"]').tooltip();
+							});
+						</script>
+					</div>
+					<div id="activity-collapse" class="collapse">
+						<div class="form-group">
+							<label class="control-label col-md-2" for="add-activity">Свой вариант:</label>
+							<div class="col-md-4">
+								<input type="text" class="form-control" id="add-activity">
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group description">
+						<label class="control-label col-md-2" for="description">Описание:</label>
+						<div class="col-md-8">
+							<textarea class="form-control" rows="5" maxlength="1000" id="description"></textarea>
+							<span id="counter">###</span>
+						</div>
+						<script>
+							//  description counter
+							$(function() {
+								$('#description').keyup(function(e) {
+									var description = $(this).val();
+									$(this).height(((description.split('\n').length + 1) * 1.5) + 'em');
+									$('#counter').html(description.length + '/1000');
+								});
+								$('#description').keyup();
+							});
+						</script>
+					</div>
+
+
+					<div class="container">
+						<div class="panel-group" id="accordion-2" role="tablist" aria-multiselectable="true">
+							<h4 class="panel-title col-md-offset-1 col-md-9">
+								<a class="col-md-5" role="button" data-toggle="collapse" data-parent="#accordion-2" href="#collapseEn" aria-expanded="true" aria-controls="collapseEn">
+									Добавить описание на английском
+
+								</a>
+								<a class="col-md-offset-6 glyphicon glyphicon-menu-down" href="#collapseEn"  role="button" data-toggle="collapse" data-parent="#accordion-2" aria-hidden="true"></a>
+							</h4>
+							<div id="collapseEn" class="panel-collapse collapse col-md-10" role="tabpanel" aria-labelledby="headingOne">
+								<div class="form-group description">
+									<label class="control-label col-md-2" for="descriptionEn">Description:</label>
+									<div class="col-md-8">
+										<textarea class="form-control" rows="5" maxlength="1000" id="descriptionEn"></textarea>
+										<span id="counterEN">###</span>
+									</div>
+									<script>
+										//  descriptionEn counter
+										$(function() {
+											$('#descriptionEn').keyup(function(e) {
+												var descriptionEn = $(this).val();
+												$(this).height(((descriptionEn.split('\n').length + 1) * 1.5) + 'em');
+												$('#counterEN').html(descriptionEn.length + '/1000');
+											});
+											$('#descriptionEn').keyup();
+										});
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for="site">Сайт:</label>
+						<div class="col-md-8">
+							<input type="url" class="form-control" id="site" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for="facebook">Facebook:</label>
+						<div class="col-md-8">
+							<input type="url" class="form-control" id="facebook" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for="twitter">Twitter:</label>
+						<div class="col-md-8">
+							<input type="url" class="form-control" id="twitter" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for="vk">Vkontakte:</label>
+						<div class="col-md-8">
+							<input type="url" class="form-control" id="vk" required>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<h4 class="title-name">Фото</h4>
+				<form class="form-horizontal" role="form">
+					<div class="form-group">
+						<div class="col-md-2 col-md-offset-2">
+							<div class="thumbnail">
+								<img src="img/ava.gif" alt="...">
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="thumbnail">
+								<div class="drop">
+									<i class="fa fa-plus-circle fa-5x"></i>
+									<input type="file">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="thumbnail">
+								<div class="drop">
+									<i class="fa fa-plus-circle fa-5x"></i>
+									<input type="file">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="thumbnail">
+								<div class="drop">
+									<i class="fa fa-plus-circle fa-5x"></i>
+									<input type="file">
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<h4 class="title-name">Режим работы</h4>
+				<form class="form-horizontal" role="form">
+					<div class="mode col-md-offset-3 clearfix">
+						<div class="days col-md-3">
+							<h5>Дни недели</h5>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="monday">Понедельник</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="Tuesday">Вторник</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="Wednesday">Среда</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="Thursday">Четверг</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="Friday">Пятница</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="Saturday">Суббота</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="Sunday">Воскресенье</label>
+							</div>
+						</div>
+
+						<div class="time-work col-md-6">
+							<h5>Время работы</h5>
+							<div class="col-md-3">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+
+							</div>
+							<div class="col-md-1">
+								<p>&mdash;</p>
+								<p>&mdash;</p>
+								<p>&mdash;</p>
+								<p>&mdash;</p>
+								<p>&mdash;</p>
+								<p>&mdash;</p>
+								<p>&mdash;</p>
+							</div>
+							<div class="col-md-3">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="worker panel panel-default">
+			<div class="panel-body">
+				<h4 class="title-name">Персонал</h4>
+				<form class="form-horizontal" role="form">
+					<div class="form-group">
+						<label class="control-label col-md-2" for="name-personal">Имя:</label>
+						<div class="col-md-8">
+							<input type="text" class="form-control" id="name-personal" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for="surname-personal">Фамилия:</label>
+						<div class="col-md-8">
+							<input type="text" class="form-control" id="surname-personal" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for="position">Должность:</label>
+						<div class="col-md-3">
+							<select class="form-control" id="position">
+								<option>Парикмахер</option>
+								<option>Стилист</option>
+								<option>Визажист</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-offset-3 clearfix">
+						<div class="days col-md-3">
+							<h5>Дни недели</h5>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="monday">Понедельник</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="Tuesday">Вторник</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="Wednesday">Среда</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="Thursday">Четверг</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="Friday">Пятница</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="Saturday">Суббота</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="Sunday">Воскресенье</label>
+							</div>
+						</div>
+
+						<div class="time-work col-md-6">
+							<h5>Время работы</h5>
+							<div class="col-md-3">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+
+							</div>
+							<div class="col-md-1">
+								<p>&mdash;</p>
+								<p>&mdash;</p>
+								<p>&mdash;</p>
+								<p>&mdash;</p>
+								<p>&mdash;</p>
+								<p>&mdash;</p>
+								<p>&mdash;</p>
+							</div>
+							<div class="col-md-3">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+								<input type="time">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for="foto-personal">Фото:</label>
+						<div class="col-md-3">
+							<span class="col-md-9 file-input btn btn-default btn-file">
+								Добавить фото
+								<input type="file">
+						</span>
+						</div>
+					</div>
+					<button type="submit" class="added btn btn-default col-md-offset-5">Добавить сотрудника</button>
+					<div class="page-ent">
+						<button type="button" class="btn btn-default col-md-4 col-md-offset-2">Прикрепить страницу предпринимателя</button>
+						<button type="button" class="btn btn-default col-md-offset-1 col-md-3">Добавить в ручную</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+
+		<div class="service panel panel-default">
+			<div class="panel-body">
+				<h4 class="title-name">Услуги</h4>
+				<form class="form-horizontal" role="form">
+					<div class="form-group">
+						<label class="control-label col-md-2" for="service-category">Категория:</label>
+						<div class="col-md-3">
+							<select class="form-control" id="service-category">
+								<option>Мужские стрижки</option>
+								<option>Женские стрижки</option>
+								<option>Модельные стрижки</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for="service-name">Наименование услуги:</label>
+						<div class="col-md-8">
+							<input type="text" class="form-control" id="service-name" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for="duration">Продолжительность:</label>
+						<div class="col-md-3">
+							<select class="form-control" id="duration">
+								<option>30 мин</option>
+								<option>45 мин</option>
+								<option>60 мин</option>
+								<option>90 мин</option>
+								<option>120 мин</option>
+							</select>
+						</div>
+						<label class="control-label col-md-1" for="price">Цена:</label>
+						<div class="col-md-2">
+							<input type="number" class="form-control" id="price">
+						</div>
+						<div class="col-md-2">
+							<select class="form-control">
+								<option>руб</option>
+								<option>доллары</option>
+								<option>евро</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2" for="service-category">Исполнители:</label>
+						<div class="col-md-3">
+					<button type="button" class="btn btn-default">Добавить исполнителя</button>
+						</div>
+					</div>
+					<div class="second">
+						<div class="form-group">
+							<label class="control-label col-md-2" for="service-category-2">Категория:</label>
+							<div class="col-md-3">
+								<select class="form-control" id="service-category-2">
+									<option>Мужские стрижки</option>
+									<option>Женские стрижки</option>
+									<option>Модельные стрижки</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-md-2" for="service-name-2">Наименование улсуги:</label>
+							<div class="col-md-8">
+								<input type="text" class="form-control" id="service-name-2" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-md-2" for="duration-2">Продолжительность:</label>
+							<div class="col-md-3">
+								<select class="form-control" id="duration-2">
+									<option>30 мин</option>
+									<option>45 мин</option>
+									<option>60 мин</option>
+									<option>90 мин</option>
+									<option>120 мин</option>
+								</select>
+							</div>
+							<label class="control-label col-md-1" for="price-2">Цена:</label>
+							<div class="col-md-2">
+								<input type="number" class="form-control" id="price-2">
+							</div>
+							<div class="col-md-2">
+								<select class="form-control">
+									<option>руб</option>
+									<option>доллары</option>
+									<option>евро</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-md-2" for="service-category">Исполнители:</label>
+							<div class="col-md-3">
+						<button type="button" class="btn btn-default">Добавить исполнителя</button>
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-default col-md-offset-5">Добавить услугу</button>
+				</form>
+			</div>
+		</div>
+		<div class="booking panel panel-default">
+			<div class="panel-body">
+				<h4 class="title-name">Бронирование и оплата</h4>
+				<form class="form-inline">
+					<div class="form-group col-md-offset-2">
+						Минимальный срок отмены брони:
+						<select class="time-cancel form-control">
+							<option>30 мин</option>
+							<option>45 мин</option>
+							<option>60 мин</option>
+						</select>
+						до времени оказания услуги
+					</div>
+				</form>
+				<form class="pay form-inline">
+					<div class="form-group col-md-offset-2">
+						Можно ли у вас оплатить услугу банковской картой?
+						<select class="time-cancel form-control">
+							<option>да</option>
+							<option>нет</option>
+						</select>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="holiday panel panel-default">
+			<div class="panel-body">
+				<h4 class="title-name">Отпуск</h4>
+				<p class="col-md-offset-2">Укажите период времени в который вы будете недоступны для своих клиентов</p>
+				<button class="btn btn-default col-md-offset-4 col-md-3" type="submit">Уйти в отпуск</button>
+			</div>
+		</div>
+		<div class="extra panel panel-default">
+			<div class="panel-body">
+				<h4 class="title-name">Дополнительно</h4>
+				<form class="form-inline">
+					<div class="form-group col-md-offset-2">
+						Есть ли у вас оборудование для упрощения доступа людей с ограниченными возможностями?
+						<select class="time-cancel form-control">
+							<option>да</option>
+							<option>нет</option>
+						</select>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<h4 class="title-name">Привлекайте больше клиентов</h4>
+				<form class="form-horizontal" role="form">
+					<div class="col-md-6 col-md-offset-2">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" value=""> Подключить платную опцию 1</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" value=""> Подключить платную опцию 2</label>
+						</div>
+						<div class="checkbox ">
+							<label>
+								<input type="checkbox" value=""> Подключить платную опцию 3</label>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="create">
+			<button type="submit" class="btn btn-danger col-md-offset-9">Отмена</button>
+			<button type="submit" class="btn btn-success">Создать страницу</button>
+		</div>
+
+	</section>
+
+	<div class="container footer">
+		<a class="navbar-brand" href="#">Brand</a>
+		<ul class="nav navbar-nav navbar-left">
+			<li role="presentation"><a href="#">Home</a></li>
+			<li role="presentation"><a href="#">Profile</a></li>
+			<li role="presentation"><a href="#">Messages</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li role="presentation"><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+			<li role="presentation"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+			<li role="presentation"><a href="#"><i class="fa fa-vk fa-2x"></i></a></li>
+			<li role="presentation"><a href="#"><i class="fa fa-google-plus fa-2x"></i></a></li>
+		</ul>
+	</div>
+
+
+
+
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>

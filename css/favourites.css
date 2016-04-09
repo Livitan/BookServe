@@ -19,7 +19,7 @@ header nav div.dropdown {
 header nav .open .dropdown-menu i{
   margin-right: 20px;
   text-align: center;
-  width: 14px; }  
+  width: 14px; }
 
 .option {
   padding: 10px; }
@@ -39,7 +39,7 @@ header nav .open .dropdown-menu i{
   padding: 0; }
 
 .main > .col-md-10 {
-  padding: 0 0 0 20px; }    
+  padding: 0 0 0 20px; }
 
 .main .panel-heading {
   background-color: #337ab7;
@@ -57,8 +57,6 @@ section .agency {
   border: 1px solid #ddd; }
   section .agency .row {
     padding: 10px; }
-  section .agency .thumbnail {
-    width: 90%; }
   section .agency .rating {
     position: absolute;
     right: 0;
@@ -69,7 +67,7 @@ section .agency {
     section .agency .rating > span:hover:before,
     section .agency .rating > span:hover ~ span:before {
      content: "\2605";
-     position: absolute; }  
+     position: absolute; }
 
 section .base {
   padding: 0 10px; }
